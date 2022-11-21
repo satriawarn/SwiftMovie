@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         title = "Main View"
+        view.backgroundColor = .cyan
     }
 
 

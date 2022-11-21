@@ -97,10 +97,15 @@
 		8C01549C292B356D000B7EE1 /* SwiftMovie */ = {
 			isa = PBXGroup;
 			children = (
-				8C0154CD292B5599000B7EE1 /* MainViewController */,
+				8C0154DA292B5A1A000B7EE1 /* Networking */,
+				8C0154D8292B5A04000B7EE1 /* Extensions */,
+				8C0154D7292B59E8000B7EE1 /* Resources */,
+				8C0154D6292B59DC000B7EE1 /* Classes */,
+				8C0154D5292B59D1000B7EE1 /* Presentation */,
+				8C0154D4292B59C9000B7EE1 /* Model */,
+				8C0154D3292B59C2000B7EE1 /* ViewModel */,
+				8C0154D2292B59B9000B7EE1 /* View */,
 				8C01549D292B356D000B7EE1 /* AppDelegate.swift */,
-				8C0154A6292B356E000B7EE1 /* Assets.xcassets */,
-				8C0154A8292B356E000B7EE1 /* LaunchScreen.storyboard */,
 				8C0154AB292B356E000B7EE1 /* Info.plist */,
 			);
 			path = SwiftMovie;
@@ -123,13 +128,72 @@
 			path = SwiftMovieUITests;
 			sourceTree = "<group>";
 		};
-		8C0154CD292B5599000B7EE1 /* MainViewController */ = {
+		8C0154CD292B5599000B7EE1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				8C0154CE292B55B2000B7EE1 /* MainViewController.swift */,
 				8C0154CF292B55B2000B7EE1 /* MainViewController.xib */,
 			);
-			path = MainViewController;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8C0154D2292B59B9000B7EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C0154A8292B356E000B7EE1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C0154D3292B59C2000B7EE1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8C0154D4292B59C9000B7EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C0154D5292B59D1000B7EE1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8C0154CD292B5599000B7EE1 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8C0154D6292B59DC000B7EE1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8C0154D7292B59E8000B7EE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C0154A6292B356E000B7EE1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C0154D8292B5A04000B7EE1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C0154DA292B5A1A000B7EE1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
