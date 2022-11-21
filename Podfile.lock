@@ -1,0 +1,83 @@
+PODS:
+  - Alamofire (5.6.2)
+  - CocoaLumberjack/Core (3.8.0)
+  - CocoaLumberjack/Swift (3.8.0):
+    - CocoaLumberjack/Core
+  - Moya (15.0.0-alpha.1):
+    - Moya/Core (= 15.0.0-alpha.1)
+  - Moya/Core (15.0.0-alpha.1):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0-alpha.1):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - MoyaSugar (1.3.3):
+    - MoyaSugar/Core (= 1.3.3)
+  - MoyaSugar/Core (1.3.3):
+    - Moya (>= 14.0.0-beta.2)
+  - MoyaSugar/RxSwift (1.3.3):
+    - Moya/RxSwift (>= 14.0.0-beta.2)
+    - MoyaSugar/Core
+    - RxSwift (>= 5.0.0)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - Then (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CocoaLumberjack/Swift
+  - Moya
+  - Moya/RxSwift
+  - MoyaSugar (from `https://github.com/devxoul/MoyaSugar.git`, branch `master`)
+  - MoyaSugar/RxSwift (from `https://github.com/devxoul/MoyaSugar.git`, branch `master`)
+  - RxCocoa
+  - RxSwift
+  - RxSwiftExt (~> 5)
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - Then
+
+EXTERNAL SOURCES:
+  MoyaSugar:
+    :branch: master
+    :git: https://github.com/devxoul/MoyaSugar.git
+
+CHECKOUT OPTIONS:
+  MoyaSugar:
+    :commit: 079f25af9798977885058895085051379755bc7c
+    :git: https://github.com/devxoul/MoyaSugar.git
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  Moya: 101c94dfb29289736ecd20fa6e82bea665e0671b
+  MoyaSugar: 63390c557e038c087dc4bcc8a9f9fda69647ce43
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+
+PODFILE CHECKSUM: fef569c2e82269418c9509c2455cf2c5280804a7
+
+COCOAPODS: 1.11.3
