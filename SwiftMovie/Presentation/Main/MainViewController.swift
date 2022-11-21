@@ -9,8 +9,11 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    //IBOutlets
+    //MARK: IBOutlets
     @IBOutlet var tableView: UITableView!
+    
+    //MARK: ViewModel goes here
+    var viewModel: MainViewModel = MainViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
