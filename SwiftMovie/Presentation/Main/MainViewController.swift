@@ -20,6 +20,10 @@ class MainViewController: UIViewController {
 
         configView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.getData()
+    }
 
     func configView(){
         title = "Main View"

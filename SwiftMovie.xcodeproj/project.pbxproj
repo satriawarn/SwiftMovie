@@ -19,6 +19,9 @@
 		8C0154D1292B55B2000B7EE1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0154CF292B55B2000B7EE1 /* MainViewController.xib */; };
 		8C0154DC292B5E94000B7EE1 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154DB292B5E94000B7EE1 /* MainViewController+TableView.swift */; };
 		8C0154DE292B5FF8000B7EE1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154DD292B5FF8000B7EE1 /* MainViewModel.swift */; };
+		8CC3B58D292B74EA0048FFE6 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B58C292B74EA0048FFE6 /* ApiClient.swift */; };
+		8CC3B593292B77830048FFE6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B592292B77830048FFE6 /* ApiService.swift */; };
+		8CC3B596292B78440048FFE6 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B595292B78440048FFE6 /* Movies.swift */; };
 		9B91099E19EC541BC02161E4 /* Pods_SwiftMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B18836A561322652AE74CB /* Pods_SwiftMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		8C0154CF292B55B2000B7EE1 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		8C0154DB292B5E94000B7EE1 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 		8C0154DD292B5FF8000B7EE1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8CC3B58C292B74EA0048FFE6 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		8CC3B592292B77830048FFE6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		8CC3B595292B78440048FFE6 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		AFE1F4B3BBF257214F07A703 /* Pods-SwiftMovieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMovieUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMovieUITests/Pods-SwiftMovieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD12D83DC652D4842B9CA37E /* libPods-SwiftMovieUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftMovieUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,12 +124,13 @@
 		8C01549C292B356D000B7EE1 /* SwiftMovie */ = {
 			isa = PBXGroup;
 			children = (
-				8C0154DA292B5A1A000B7EE1 /* Networking */,
+				8CC3B58E292B75EF0048FFE6 /* Application */,
+				8C0154DA292B5A1A000B7EE1 /* Data */,
 				8C0154D8292B5A04000B7EE1 /* Extensions */,
 				8C0154D7292B59E8000B7EE1 /* Resources */,
 				8C0154D6292B59DC000B7EE1 /* Classes */,
 				8C0154D5292B59D1000B7EE1 /* Presentation */,
-				8C0154D4292B59C9000B7EE1 /* Model */,
+				8C0154D4292B59C9000B7EE1 /* Domain */,
 				8C0154D3292B59C2000B7EE1 /* ViewModel */,
 				8C0154D2292B59B9000B7EE1 /* View */,
 				8C01549D292B356D000B7EE1 /* AppDelegate.swift */,
@@ -175,11 +182,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		8C0154D4292B59C9000B7EE1 /* Model */ = {
+		8C0154D4292B59C9000B7EE1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				8CC3B594292B78270048FFE6 /* Entities */,
 			);
-			path = Model;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		8C0154D5292B59D1000B7EE1 /* Presentation */ = {
@@ -212,11 +220,60 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		8C0154DA292B5A1A000B7EE1 /* Networking */ = {
+		8C0154DA292B5A1A000B7EE1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3B589292B749D0048FFE6 /* Network */,
+				8CC3B588292B74970048FFE6 /* DataMapping */,
+				8CC3B587292B748C0048FFE6 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8CC3B587292B748C0048FFE6 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Networking;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8CC3B588292B74970048FFE6 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		8CC3B589292B749D0048FFE6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3B58C292B74EA0048FFE6 /* ApiClient.swift */,
+				8CC3B592292B77830048FFE6 /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8CC3B58E292B75EF0048FFE6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3B58F292B75F50048FFE6 /* Common */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8CC3B58F292B75F50048FFE6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8CC3B594292B78270048FFE6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3B595292B78440048FFE6 /* Movies.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		AA11310C605181F989A7492F /* Frameworks */ = {
@@ -239,7 +296,6 @@
 				AFE1F4B3BBF257214F07A703 /* Pods-SwiftMovieUITests.debug.xcconfig */,
 				7495E1E4C670B8BF340BC93D /* Pods-SwiftMovieUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -464,10 +520,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC3B596292B78440048FFE6 /* Movies.swift in Sources */,
 				8C01549E292B356D000B7EE1 /* AppDelegate.swift in Sources */,
 				8C0154DC292B5E94000B7EE1 /* MainViewController+TableView.swift in Sources */,
+				8CC3B593292B77830048FFE6 /* ApiService.swift in Sources */,
 				8C0154D0292B55B2000B7EE1 /* MainViewController.swift in Sources */,
 				8C0154DE292B5FF8000B7EE1 /* MainViewModel.swift in Sources */,
+				8CC3B58D292B74EA0048FFE6 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
