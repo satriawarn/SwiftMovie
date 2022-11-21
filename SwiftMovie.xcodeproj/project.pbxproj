@@ -15,6 +15,7 @@
 		8C0154C1292B356F000B7EE1 /* SwiftMovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154C0292B356F000B7EE1 /* SwiftMovieUITestsLaunchTests.swift */; };
 		8C0154D0292B55B2000B7EE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154CE292B55B2000B7EE1 /* MainViewController.swift */; };
 		8C0154D1292B55B2000B7EE1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0154CF292B55B2000B7EE1 /* MainViewController.xib */; };
+		8C0154DC292B5E94000B7EE1 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154DB292B5E94000B7EE1 /* MainViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8C0154C0292B356F000B7EE1 /* SwiftMovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8C0154CE292B55B2000B7EE1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8C0154CF292B55B2000B7EE1 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8C0154DB292B5E94000B7EE1 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				8C0154CE292B55B2000B7EE1 /* MainViewController.swift */,
 				8C0154CF292B55B2000B7EE1 /* MainViewController.xib */,
+				8C0154DB292B5E94000B7EE1 /* MainViewController+TableView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C01549E292B356D000B7EE1 /* AppDelegate.swift in Sources */,
+				8C0154DC292B5E94000B7EE1 /* MainViewController+TableView.swift in Sources */,
 				8C0154D0292B55B2000B7EE1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
