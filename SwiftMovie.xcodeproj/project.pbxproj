@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8C01549E292B356D000B7EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01549D292B356D000B7EE1 /* AppDelegate.swift */; };
-		8C0154A0292B356D000B7EE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01549F292B356D000B7EE1 /* SceneDelegate.swift */; };
-		8C0154A2292B356D000B7EE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154A1292B356D000B7EE1 /* ViewController.swift */; };
-		8C0154A5292B356D000B7EE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0154A3292B356D000B7EE1 /* Main.storyboard */; };
 		8C0154A7292B356E000B7EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0154A6292B356E000B7EE1 /* Assets.xcassets */; };
 		8C0154AA292B356E000B7EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0154A8292B356E000B7EE1 /* LaunchScreen.storyboard */; };
 		8C0154B5292B356F000B7EE1 /* SwiftMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154B4292B356F000B7EE1 /* SwiftMovieTests.swift */; };
 		8C0154BF292B356F000B7EE1 /* SwiftMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154BE292B356F000B7EE1 /* SwiftMovieUITests.swift */; };
 		8C0154C1292B356F000B7EE1 /* SwiftMovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154C0292B356F000B7EE1 /* SwiftMovieUITestsLaunchTests.swift */; };
+		8C0154D0292B55B2000B7EE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0154CE292B55B2000B7EE1 /* MainViewController.swift */; };
+		8C0154D1292B55B2000B7EE1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0154CF292B55B2000B7EE1 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 /* Begin PBXFileReference section */
 		8C01549A292B356D000B7EE1 /* SwiftMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C01549D292B356D000B7EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C01549F292B356D000B7EE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C0154A1292B356D000B7EE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8C0154A4292B356D000B7EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C0154A6292B356E000B7EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C0154A9292B356E000B7EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C0154AB292B356E000B7EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +45,8 @@
 		8C0154BA292B356F000B7EE1 /* SwiftMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0154BE292B356F000B7EE1 /* SwiftMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMovieUITests.swift; sourceTree = "<group>"; };
 		8C0154C0292B356F000B7EE1 /* SwiftMovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C0154CE292B55B2000B7EE1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8C0154CF292B55B2000B7EE1 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +97,8 @@
 		8C01549C292B356D000B7EE1 /* SwiftMovie */ = {
 			isa = PBXGroup;
 			children = (
+				8C0154CD292B5599000B7EE1 /* MainViewController */,
 				8C01549D292B356D000B7EE1 /* AppDelegate.swift */,
-				8C01549F292B356D000B7EE1 /* SceneDelegate.swift */,
-				8C0154A1292B356D000B7EE1 /* ViewController.swift */,
-				8C0154A3292B356D000B7EE1 /* Main.storyboard */,
 				8C0154A6292B356E000B7EE1 /* Assets.xcassets */,
 				8C0154A8292B356E000B7EE1 /* LaunchScreen.storyboard */,
 				8C0154AB292B356E000B7EE1 /* Info.plist */,
@@ -125,6 +121,15 @@
 				8C0154C0292B356F000B7EE1 /* SwiftMovieUITestsLaunchTests.swift */,
 			);
 			path = SwiftMovieUITests;
+			sourceTree = "<group>";
+		};
+		8C0154CD292B5599000B7EE1 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C0154CE292B55B2000B7EE1 /* MainViewController.swift */,
+				8C0154CF292B55B2000B7EE1 /* MainViewController.xib */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0154AA292B356E000B7EE1 /* LaunchScreen.storyboard in Resources */,
+				8C0154D1292B55B2000B7EE1 /* MainViewController.xib in Resources */,
 				8C0154A7292B356E000B7EE1 /* Assets.xcassets in Resources */,
-				8C0154A5292B356D000B7EE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C0154A2292B356D000B7EE1 /* ViewController.swift in Sources */,
 				8C01549E292B356D000B7EE1 /* AppDelegate.swift in Sources */,
-				8C0154A0292B356D000B7EE1 /* SceneDelegate.swift in Sources */,
+				8C0154D0292B55B2000B7EE1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8C0154A3292B356D000B7EE1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C0154A4292B356D000B7EE1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8C0154A8292B356E000B7EE1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +438,6 @@
 				INFOPLIST_FILE = SwiftMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +465,6 @@
 				INFOPLIST_FILE = SwiftMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
