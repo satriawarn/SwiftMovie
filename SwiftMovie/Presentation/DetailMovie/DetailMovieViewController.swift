@@ -28,8 +28,12 @@ class DetailMovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configView()
     }
     
-    
+    func configView(){
+        
+    }
 
 }
