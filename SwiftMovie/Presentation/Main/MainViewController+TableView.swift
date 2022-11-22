@@ -13,14 +13,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     func setupTableView(){
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.tableView.backgroundColor = .clear
         
         registerCells()
     }
     
     func registerCells(){
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(MainMovieCell.register(), forCellReuseIdentifier: MainMovieCell.identifier)
     }
     
     func reloadTableView(){
@@ -38,12 +38,16 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainMovieCell.identifier, for: indexPath) as? MainMovieCell else {
+            return UITableViewCell()
+        }
         
-        let movieData = cellDataSource[indexPath.row]
-        cell.textLabel?.text = self.viewModel.getMovieTitle(movieData)
+        let cellViewModel = cellDataSource[indexPath.row]
+        cell.setupCell(viewModel: cellViewModel)
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        150
+    }
 }
