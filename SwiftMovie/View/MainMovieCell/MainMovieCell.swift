@@ -30,7 +30,6 @@ class MainMovieCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backView.addBorder(color: .label, width: 1)
         backView.round()
         backView.backgroundColor = .lightGray
         

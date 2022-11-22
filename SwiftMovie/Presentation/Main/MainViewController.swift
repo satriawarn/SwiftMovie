@@ -62,4 +62,17 @@ class MainViewController: UIViewController {
             self.reloadTableView()
         }
     }
+    
+    func openDetail(movieId: Int){
+        guard let movie = viewModel.retriveMovie(with: movieId) else {
+            return
+        }
+        let detailsViewModel = DetailsMovieViewModel(movie: movie)
+        let detailController = DetailMovieViewController(viewModel: detailsViewModel)
+        
+        //MARK: Injection (intent in android)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(detailController, animated: true)
+        }
+    }
 }

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailMovieViewController" customModule="SwiftMovie" customModuleProvider="target">
             <connections>
-                <outlet property="description" destination="65w-Zd-dfC" id="a26-q1-5jX"/>
+                <outlet property="descriptionLabel" destination="65w-Zd-dfC" id="nAp-si-Sy5"/>
                 <outlet property="imageView" destination="YN9-g2-2ta" id="HKi-t7-N0R"/>
                 <outlet property="movieTitle" destination="ygZ-BV-3ZX" id="lXG-Au-erE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,33 +22,35 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YN9-g2-2ta">
-                    <rect key="frame" x="8" y="51" width="390" height="211"/>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygZ-BV-3ZX">
                     <rect key="frame" x="8" y="278" width="374" height="33.666666666666686"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65w-Zd-dfC">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65w-Zd-dfC">
                     <rect key="frame" x="8" y="331.66666666666669" width="374" height="24"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YN9-g2-2ta">
+                    <rect key="frame" x="0.0" y="47" width="390" height="211"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="ygZ-BV-3ZX" firstAttribute="top" secondItem="YN9-g2-2ta" secondAttribute="bottom" constant="16" id="3Qw-Pa-Nve"/>
-                <constraint firstItem="YN9-g2-2ta" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="8" id="9hH-M5-ifS"/>
-                <constraint firstItem="YN9-g2-2ta" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Bzf-cZ-UFH"/>
-                <constraint firstItem="YN9-g2-2ta" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="DaC-Yl-ZMD"/>
+                <constraint firstItem="ygZ-BV-3ZX" firstAttribute="top" secondItem="YN9-g2-2ta" secondAttribute="bottom" constant="20" id="3Qw-Pa-Nve"/>
+                <constraint firstItem="YN9-g2-2ta" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9hH-M5-ifS"/>
+                <constraint firstItem="YN9-g2-2ta" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Bzf-cZ-UFH"/>
+                <constraint firstItem="YN9-g2-2ta" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DaC-Yl-ZMD"/>
                 <constraint firstItem="ygZ-BV-3ZX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="HTi-x6-Xwl"/>
                 <constraint firstItem="65w-Zd-dfC" firstAttribute="top" secondItem="ygZ-BV-3ZX" secondAttribute="bottom" constant="20" id="PoO-91-pDa"/>
+                <constraint firstItem="YN9-g2-2ta" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="8" id="U6S-3A-vmv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ygZ-BV-3ZX" secondAttribute="trailing" constant="8" id="Yj1-5F-geD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="65w-Zd-dfC" secondAttribute="trailing" constant="8" id="bhK-6n-snv"/>
+                <constraint firstItem="YN9-g2-2ta" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="rw3-6p-hFy"/>
                 <constraint firstItem="YN9-g2-2ta" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="vab-5G-w5H"/>
                 <constraint firstItem="65w-Zd-dfC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="wS7-o7-KM2"/>
             </constraints>

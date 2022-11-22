@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailMovieViewController: UIViewController {
 
@@ -19,7 +20,7 @@ class DetailMovieViewController: UIViewController {
     
     init(viewModel: DetailsMovieViewModel) {
         self.viewModel = viewModel
-        super.init(nibName: "DetailsMovieViewController", bundle: nil)
+        super.init(nibName: "DetailMovieViewController", bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -33,7 +34,10 @@ class DetailMovieViewController: UIViewController {
     }
     
     func configView(){
-        
+        self.title = "Movie Detail"
+        movieTitle.text = viewModel.movieTitle
+        descriptionLabel.text = viewModel.movieDescription
+        imageView.sd_setImage(with: viewModel.movieImage)
     }
 
 }
