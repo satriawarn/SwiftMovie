@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SwiftMovie" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="oQl-m9-N6Q" id="22n-tR-JLY"/>
                 <outlet property="tableView" destination="47I-qz-jjL" id="8kj-cE-a44"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +24,12 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="47I-qz-jjL">
                     <rect key="frame" x="0.0" y="47" width="390" height="797"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" systemColor="systemGray2Color"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oQl-m9-N6Q">
+                    <rect key="frame" x="176.66666666666666" y="403.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemGray2Color"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -31,7 +37,9 @@
                 <constraint firstItem="47I-qz-jjL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1Fr-yV-WHr"/>
                 <constraint firstAttribute="bottom" secondItem="47I-qz-jjL" secondAttribute="bottom" id="IoW-0Z-HJl"/>
                 <constraint firstItem="47I-qz-jjL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="T8A-pD-rQC"/>
+                <constraint firstItem="oQl-m9-N6Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cDH-rL-a00"/>
                 <constraint firstItem="47I-qz-jjL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="i0y-vn-Kfd"/>
+                <constraint firstItem="oQl-m9-N6Q" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="t9S-d9-m35"/>
             </constraints>
             <point key="canvasLocation" x="7.6923076923076916" y="20.616113744075829"/>
         </view>
@@ -39,6 +47,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
