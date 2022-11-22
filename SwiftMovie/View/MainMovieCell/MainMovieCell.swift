@@ -35,7 +35,7 @@ class MainMovieCell: UITableViewCell {
         backView.backgroundColor = .lightGray
         
         
-        movieImageView.round(5)
+        movieImageView.round()
     }
     
     func setupCell(viewModel: MovieTableCellViewModel){
