@@ -32,7 +32,7 @@ class MainViewModel {
             
             switch result {
             case .success(let data):
-                print("top trending count \(data.results.count)")
+                log.info(data.results.count)
                 self?.dataSource = data
                 self?.mapCellData()
             case .failure(let error):
